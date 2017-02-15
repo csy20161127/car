@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Demo styles -->
+    <style type="text/css">
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide{
+    	width: 100%;
+    	height: 100%;
+    	background-size: 100% 100%;
+    	background-repeat: no-repeat;
+    }
+    .swiper-slide:nth-of-type(1){
+		background-image: url('img/bg1.png');
+    }
+    .swiper-slide:nth-of-type(2){
+		background-image: url('img/bg2.jpg');
+    }
+    .swiper-slide:nth-of-type(3){
+		background-image: url('img/bg3.jpg');
+    }
+    .swiper-slide:nth-of-type(4){
+		background-image: url('img/bg4.jpg');
+    }
+    .swiper-slide:nth-of-type(5){
+		background-image: url('img/bg5.png');
+    }
+    .first_1{
+    	position: absolute;top: 15%;width: 82%;left: 3%;
+    }
+    .first_2{
+        position: absolute;left: 0%;width: 89%;
+    }
+    .swiper-slide:nth-of-type(1) i,.swiper-slide:nth-of-type(2) i{
+        position:absolute;top: 35%;width: 90%;left: 3%;color: #8B8C88;font-size:15px;font-weight: bold;text-align: left;
+    }
+    .swiper-slide:nth-of-type(4) i{
+         position:absolute;top: 25%;width: 90%;left: 3%;color: #8B8C88;font-size:15px;font-weight: bold;text-align: left;
+    }
+    .swiper-slide>div:nth-of-type(1){     
+        width: 100%;
+        height: 20%;
+        background-repeat: no-repeat;
+        background-image: url(img/logo.png);
+        position: absolute;
+        top: 0;
+        background-size: 100% 34%;
+    }
+    .second_1{
+        width: 80%;
+        position: absolute;
+        top: 12%;
+        left: 2%;
+    }
+    .second_2{
+        width: 80%;
+        position: absolute;
+        top: 65%;
+        right: 0%;
+    }
+    mark{
+        color: #8C6442;
+        background-color: transparent;
+        font-size: 20px;
+    }
+    .three_1{
+        position: absolute;
+        width: 75%;
+        top:10%;
+        right: 0%;
+    }
+    .three_2{
+        width: 45%;
+        position: absolute;
+        top: 66%;
+        left: 1%;
+    }
+    .three_3{
+        position: absolute;
+        font-size:15px;
+        color: #8B8C88;
+        top:30%;
+        right: 2%;
+        text-align: right;
+        width: 100%;
+        font-weight: bold;
+    }
+    .four_1{
+        position: absolute;
+        top:8%;
+        left: 0%;
+        width: 80%;
+    }
+    .four_2{
+        width: 35%;
+        position: absolute;
+        top: 79%;
+        right: 10%;
+
+    }
+    .four_3{
+        width: 40%;
+        position: absolute;
+        top:60%;
+        left: 8%
+    }
+    .five_1{
+        position: absolute;
+        top: 16%;
+        left:5%;
+        width: 80%;
+    }
+    .five_2{
+        position: absolute;
+        top:34%;
+        right: 0%;
+        width: 43%;
+    }
+    .five_3{
+        width: 86%;
+        position: absolute;
+        top: 65%;
+        left: 8%;
+    }
+    .car{
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        top: 71%;
+        right: 1%;
+    }
+    .first_3{
+          position: absolute;
+        left: 45%;
+        top: 100%;
+        width: 14%;
+    }
+   </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div></div>
+            	<img src="img/bg11.png" class="first_1 ani"
+                swiper-animate-effect="swing" swiper-animate-duration="2s" >
+                <i class="ani"  swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">剑拔弩张的对持，更是英雄相惜的跃跃欲试<br/>驭见高尔夫R-Line，遇见另一个自己</i>
+                <div class=" car ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                    <img src="img/car.png" class="first_2"  >
+                    <img src="img/lun.png" class="first_3 ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div></div>
+                <img src="img/bg21.png" class="second_1 ani"  swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="0.1s">
+                 <i class="ani" swiper-animate-effect="zoomInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.3s">设计动感入微，经管已澎湃。<br/>锋芒展露的前大灯与犀利尾翼首尾呼应，匹配你的运动气质:<br/>有如为你量身订制的福特<br/><mark>R-Line标识，</mark><br/>是你不甘于常规的鲜明印记<br/>更配备精致<mark>17寸轮铝毅</mark><br/> 与你一同丈量世界!</i>
+                <img src="img/car2.png" class="second_2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.7s">
+            </div>
+            <div class="swiper-slide">
+                <div></div>
+                <img src="img/bg31.png" class="three_1 ani" swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+                <i class="three_3 ani" swiper-animate-effect="rotateInDownLeft" swiper-animate-duration="1s" swiper-animate-delay="0.2s">动感要放肆，而环保要克制。<br/>搭建<mark>1.4TSI</mark>发动带来的淋漓快感，<br>满足你释放身心的渴望:<br/>配合<mark>手自一体DSG</mark>双离合自动变速器,<br/>领先科技更让动力与节能收放自如<br/>多功能运动向盘，更多选择触发无限可能！</i>
+                 <img src="img/fa.png" class="three_2 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1s">
+            </div>
+            <div class="swiper-slide">
+                <div></div>
+                <img src="img/bg41.jpg" class="four_1 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+                <i class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.2s">品味不拘于形式美学，<br/>更将感官体验全面深化。<br/><mark>全面酷热内饰，</mark>运动风范一展无余:<br/><mark>双色电加热座椅，</mark>真皮质感匹配创新科技，<br/>养眼更暖心:每一细微之处,<br/>皆是视觉与触觉的双重满足，<br/>面面俱到的享受。</i>
+                <img src="img/bg4_1.png" class="four_2 ani" swiper-animate-effect="fadeIn1" swiper-animate-duration="2s" swiper-animate-delay="1.9s">
+                 <img src="img/bg4_2.png" class="four_3 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="1.2s">
+            </div>
+            <div class="swiper-slide">
+                <div></div>
+                <img src="img/bg51.png" class="five_1 ani" swiper-animate-effect="wobble" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+                <img src="img/button.png" class="five_2 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+                <img src="img/car5.png" class="five_3 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.2s">
+            </div>
+        </div>
+        <!-- 分页器 -->
+        <!-- Add Pagination -->
+       <!--  <div class="swiper-pagination"></div> -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- animate Js -->
+    <script type="text/javascript" src="js/swiper.animate.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        // 分页器
+        // 是tab切换的点
+        // pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical',
+         onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+         swiperAnimateCache(swiper); //隐藏动画元素 
+        swiperAnimate(swiper); //初始化完成开始动画
+     }, 
+    onSlideChangeEnd: function(swiper){ 
+    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+  }      
+    });
+    </script>
+</body>
+</html>
